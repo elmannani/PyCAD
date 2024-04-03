@@ -76,7 +76,7 @@ convo = model.start_chat(history=[
 
 
 while True:
- text = "extract the geometrique informations such as shape, radius, center coordinates, height, plan, axis without naming from the sentences if it exists and if doesn't exist return None, else skip:"
+ text = "for any given sentence give me directly the extracted info separated by commas without any description or any axplanation in the same line use this template for the extraction : shape, radius, height, x coordinates, y coordinates, z coordinates, plan, axis , don't skip any info and if the info doesn't exist write None"
  input_text = input("extract the geometrique informations from the sentences :")
  convo.send_message(text + input_text)
  response = convo.last.text
