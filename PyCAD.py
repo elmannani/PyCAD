@@ -25,7 +25,7 @@ hybrid_body_shape.name = "shapes"
 hybrid_body_surface.name = "construction_surfaces"
 
 
-genai.configure(api_key="YOUR_API_KEY")
+genai.configure(api_key="YOUR_GEMINI_API_KEY")
 
 generation_config = {
  "temperature": 0.2,
